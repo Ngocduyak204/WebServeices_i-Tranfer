@@ -1,0 +1,138 @@
+/* Đảm bảo toàn bộ trang căn chuẩn */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Flex layout cho body */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Đảm bảo main chiếm chiều cao còn lại */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form,
+.form * {
+  box-sizing: border-box;
+}
+.form {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;         
+  max-width: 1200px;   
+  margin: 0 auto;   
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.title {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+  width: 60%;  
+}
+/*Input*/
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+input[style*="border-color: red"]::placeholder {
+  color: red;
+}
+.input input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.button-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.bottom-row {
+  margin-top: 0;
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+.secondary {
+  background-color: #38a89d;
+  color: #000000;
+}
+#reset-msg {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  z-index: 9999;
+  text-align: center;
+}

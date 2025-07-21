@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Flex layout cho body */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Đảm bảo main chiếm chiều cao còn lại */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.info__heading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Căn giữa phần nội dung info */
+.info__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+/* Khối thông tin cá nhân */
+.info__section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Ảnh nếu có */
+.info__img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info__content {
+  margin-top: 20px;
+}
+
+.info__content-group {
+  margin-bottom: 15px;
+}
+
+.info__desc {
+  font-weight: bold;
+  color: #555;
+}
+
+.info__value {
+  color: #333;
+}

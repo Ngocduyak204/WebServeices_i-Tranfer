@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dangnhap.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+      <!-- Form đăng nhập -->
+        <div class="form">
+          <!-- Bước 1: Nhập email và mật khẩu -->
+            <div class="container">
+              <div class="title">Sign In</div>
+              <div class="description">Access your i-Transfer account</div>
+            </div>
+            <div class="list">
+              <div class="row">
+                <div class="input">
+                  <div class="title2">Username: </div>
+                  <div class="textfield">
+                    <input type="text" id="username" placeholder="Enter your username" />
+                    <span class="error-msg" id="username-error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input">
+                  <div class="title2">Password:</div>
+                  <div class="textfield">
+                    <input type="password" id="password" placeholder="Enter your password" />
+                    <span class="error-msg" id="password-error"></span>
+                    <button type="button" id="toggle-password" >
+                      👁️
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Button-->
+              <div class="button-row">
+                <button class="primary" onclick="handleLogin()">Sign In</button>
+              </div>
+              <div class="button-row button-row">
+                <button  class="secondary1" onclick="handleSignup()">Sign Up</button>
+                <button  class="secondary2" onclick="handleForgotPassword()">Forgot Password</button>
+              </div>
+            </div>
+
+            <!-- Form bước 2: Nhập OTP -->
+             <div>
+                <div id="login-msg"></div>
+                <div id="otp-form" class="hidden">
+                  <input type="text" id="otp" placeholder="Nhập mã OTP" required />
+                  <button onclick="handleVerifyOtp()">Xác minh OTP</button>
+                  <p id="otp-msg"></p>
+                </div>
+             </div>
+            
+            
+          </div>
+    </main>
+    <footer>
+    </footer>   
+    <script type="module" src="../js/dashboard.js"></script>
+    <script src="../js/dangnhap.js"></script>
+
+</body>
+</html>

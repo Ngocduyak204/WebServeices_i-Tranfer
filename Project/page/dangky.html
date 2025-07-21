@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dangky.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="form">
+          <div class="container">
+            <div class="title">Sign Up</div>
+            <div class="description">Create a new i-Transfer account</div>
+          </div>
+          <div class="list">
+            <div class="row">
+              <div class="input">
+                <div class="title2">Username:</div>
+                <div class="textfield">
+                  <input type="text" id="username" placeholder="Enter your username" />
+                  <span class="error-msg" id="username-error"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input">
+                <div class="title2">Email:</div>
+                <div class="textfield">
+                  <input type="email" id="email" placeholder="Enter your email" />
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input">
+                <div class="title2">Password:</div>
+                <div class="textfield">
+                  <input type="password" id="password" placeholder="Enter your password" />
+                  <span class="error-msg" id="password-error"></span>
+                  <button type="button" id="toggle-password" >
+                    👁️
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input">
+                <div class="title2">Phone:</div>
+                <div class="textfield">
+                  <input type="text" id="phone" placeholder="Enter your phone number" />
+                  <span class="error-msg" id="phone-error"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-link">
+                <span>Đã có tài khoản? </span>
+                <a href="dangnhap.html">Đăng nhập</a>
+            </div>
+                       
+            <div class="button-row">
+                <button class="primary" onclick="handleSignup()">Sign Up</button>
+            </div>
+          </div>
+        </div>       
+         
+    </main>
+
+    <footer>
+    </footer>
+    
+    <script type="module" src="../js/dashboard.js"></script>
+    <script src="../js/dangky.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/quenMK.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Quên mật khẩu</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="form">
+            <div class="container">
+              <div class="title">Forgot Password</div>
+              <div class="description">Recover your account password</div>
+            </div>
+            <div class="list">
+              <div class="row">
+                <div class="input">
+                  <div class="title2">Email:</div>
+                  <div class="textfield">
+                    <input type="text" id="email" placeholder="Enter your email" />
+                    <span class="error-msg" id="email-error"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="button-row">
+                <div>    
+                  <button class="secondary" onclick="handleResetPassword()">Reset Password</button>                
+                </div>
+                <div id="reset-msg"></div>
+              </div>
+            </div>            
+          </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../js/quenMK.js"></script>
+    <script type="module" src="../js/dashboard.js"></script>          
+    
+</body>
+</html>
